@@ -1,0 +1,37 @@
+{
+  "name": "emeega",
+  "version": "1.0.0",
+  "description": "Make PHP great again!",
+  "scripts": {
+    "production": "./node_modules/.bin/encore production",
+    "dev": "./node_modules/.bin/encore dev --watch"
+  },
+  "author": "Emin Muhammadi <muemin17631@sabah.edu.az>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@popperjs/core": "^2.0.1",
+    "@symfony/webpack-encore": "^0.28.2",
+    "autoprefixer": "^9.7.4",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "sass-loader": "^7.0.1",
+    "ts-loader": "^5.3.0",
+    "typescript": "^3.7.5",
+    "webpack-notifier": "^1.8.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ]
+}

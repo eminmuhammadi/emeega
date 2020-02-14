@@ -1,0 +1,38 @@
+{
+    "name": "eminmuhammadi/emeega",
+    "description": "Make PHP great again",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Emin Muhammadi",
+            "email": "muemin17631@sabah.edu.az"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "eminmuhammadi\\emeega\\": "src/"
+        },
+        "classmap": ["src/"]
+    },    
+    "require": {
+        "twig/twig": "^2.0",
+        "twig/cache-extension": "~1.0",
+        "scssphp/scssphp": "^1.0",
+        "symfony/webpack-encore-bundle": "^1.7",
+        "symfony/console": "^5.0",
+        "symfony/browser-kit": "^5.0",
+        "symfony/yaml": "^5.0",
+        "symfony/finder": "^5.0",
+        "symfony/expression-language": "^5.0",
+        "symfony/proxy-manager-bridge": "^5.0",
+        "limenius/react-bundle": "^5.0",
+        "symfony/dotenv": "^5.0",
+        "laminas/laminas-eventmanager": "^3.2",
+        "laminas/laminas-code": "^3.4",
+        "nochso/html-compress-twig": "*",
+        "cache/apcu-adapter": "^1.0",
+        "doctrine/cache": "^1.10"
+    }
+}

@@ -1,0 +1,26 @@
+{% cache 'app/html?v=1.0.0' 900 %}
+{% htmlcompress %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="{{ PUBLIC_URL }}/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+
+        <title>My Webpage</title>
+
+        <link rel="manifest" href="{{ PUBLIC_URL }}{{ PUBLIC_PATH }}/manifest.json">
+        <link rel="shortcut icon" href="{{ PUBLIC_URL }}{{ PUBLIC_PATH }}/favicon.ico">
+        {{ CSS | raw }}
+    </head>
+    <body>
+        <noscript>
+          You need to enable JavaScript to run this app.
+        </noscript>
+        <div id="root"></div>
+        {{ JS | raw }}
+    </body>
+</html>
+{% endhtmlcompress %}
+{% endcache %}
