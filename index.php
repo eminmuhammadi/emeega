@@ -1,5 +1,9 @@
 <?php
 
+	/**
+	*  @author Emin eminmuhammadi <muemin17631@sabah.edu.az>
+	*  @license MIT
+	*/
 	require_once 'vendor/autoload.php';
 
 	/**
@@ -12,8 +16,8 @@
 	 * Main variables
 	 */
 	$build    = new eminmuhammadi\emeega\Builder\Assets('public/build/entrypoints.json');
-	$env 	  = (new \Symfony\Component\Dotenv\Dotenv())->load(__DIR__.'/.env');
-	$template = new \Twig\Loader\FilesystemLoader('static/html');
+	$env 	    = (new \Symfony\Component\Dotenv\Dotenv())->load(__DIR__.'/.env');
+	$template = new \Twig\Loader\FilesystemLoader('assets/view');
 	$html     = new \Twig\Environment($template, []);
 
 	/**

@@ -43,15 +43,15 @@ PUBLIC_URL= YOUR_URL_HERE
 ## Assets
 [+] React Files
 
- |  -- static/js/
+ |  -- assets/js/
 
 [+] SCSS (SASS)
 
- |  -- static/scss/
+ |  -- assets/scss/
 
 [+] HTML (PHP Twig)
 
- |  -- static/html/
+ |  -- assets/view/
 
 ## Authors
 * **Emin Muhammadi** - *Initial work* - [eminmuhammadi](https://github.com/eminmuhammadi)

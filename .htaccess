@@ -20,11 +20,11 @@
 
   RewriteRule ^node_modules/$ - [R=403,L]
   RewriteRule ^src/$ - [R=403,L]
-  RewriteRule ^static/$ - [R=403,L]
+  RewriteRule ^assets/$ - [R=403,L]
   RewriteRule ^vendor/$ - [R=403,L]
 </IfModule>
 
-<FilesMatch "^(.env|.env.sample|.gitignore|.htaccess|composer.json|composer.lock|package-lock.json|package.json|postcss.config.js|README.md|webpack.config.js)$">
+<FilesMatch "^(.json|.yml|.env|.env.sample|.gitignore|.htaccess|composer.json|composer.lock|package-lock.json|package.json|.config.js|.md)$">
   Require all denied
 </FilesMatch>
 
